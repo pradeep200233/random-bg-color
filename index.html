@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <button onclick="danger()">click me</button>
+    <script>
+      function color() {
+        let a = "0123456789ABCDEF";
+        let str1 = "#";
+        for (i = 0; i < 6; i++) {
+          str1 += a[Math.floor(Math.random() * 14)];
+        }
+        return str1;
+      }
+      function danger() {
+        document.body.style.backgroundColor = color();
+      }
+    </script>
+  </body>
+</html>
